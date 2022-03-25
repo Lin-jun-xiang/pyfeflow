@@ -2,8 +2,9 @@
 ### Introduction
 Using Beetle Antennae Search algorithm (BAS) to solve the groundwater simulation problem.
 
-Numerical groundwater simulation tool : FEFLOW7.3
-Script : Python 3.8.6
+* Numerical groundwater simulation tool : FEFLOW7.3
+
+* Script : Python 3.8.6
 
 In our study area have a lot of private wells that we cannot get the detailed information (ex: well location, well pumping rate). Therefore, we set some virtual wells uniformly in the study area, and all the pumping rate are our system parameters. The system parameters will be adjust by BAS.
 
