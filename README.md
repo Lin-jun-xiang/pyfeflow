@@ -39,10 +39,15 @@ Roughly explain:
 As we can see, the result is not good without well setting.
 (gray line : observation ; color line : simulation result)
 
-And compare to the observation data, the **absolute erro**r is 6.87, **root mean square** is 7.83 and **standard deviation** is 8.
+And compare to the observation data, the 
+> **absolute erro**r is 6.87
+
+> **root mean square** is 7.83
+
+> **standard deviation** is 8.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159640520-910c0a10-67a5-45de-b03b-93d0be45e868.png" width=300px/>
+<img src="https://user-images.githubusercontent.com/63782903/159640520-910c0a10-67a5-45de-b03b-93d0be45e868.png" width=200px/>
 </p>
 
 ---
@@ -50,7 +55,11 @@ And compare to the observation data, the **absolute erro**r is 6.87, **root mean
 
 We set well in the study area uniformly, and then use BAS.
 
-The **absolute erro**r is 0.988, **root mean square** is 1.3 and **standard deviation** is 1.3.
+> **absolute erro**r is 0.988
+
+> **root mean square** is 1.3
+
+> **standard deviation** is 1.3.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63782903/159641259-042c74c8-3028-4253-a7b8-249b46966bc5.png" width=50%/>
