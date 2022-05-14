@@ -15,6 +15,13 @@ The BAS are developed in 2017 (Jiang and Li), and the algorithm as following:
 </p>
 
 ---
+### Workflow
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/63782903/168416976-8bc62e63-a839-44ba-9dec-d194c9b0ad56.png" widht=50%/>
+</p>
+
+---
 ### Part1 - Study area
 
 Roughly explain:
