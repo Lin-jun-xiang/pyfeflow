@@ -41,13 +41,13 @@ Roughly explain:
 3. Setting the hydraulic conductivity and inflow of study area.
 
 ---
-### Part3 - Result
+### Part3 - Before Optimization
 
 As we can see, the result is not good without well setting.
 (gray line : observation ; color line : simulation result)
 
 And compare to the observation data, the 
-> **absolute erro**r is 6.87
+> **absolute error** is 6.87
 
 > **root mean square** is 7.83
 
@@ -58,11 +58,11 @@ And compare to the observation data, the
 </p>
 
 ---
-### Part4 - Optimization
+### Part4 - After Optimization
 
 We set well in the study area uniformly, and then use BAS.
 
-> **absolute erro**r is 0.988
+> **absolute error** is 0.988
 
 > **root mean square** is 1.3
 
@@ -72,3 +72,7 @@ We set well in the study area uniformly, and then use BAS.
 <img src="https://user-images.githubusercontent.com/63782903/159641259-042c74c8-3028-4253-a7b8-249b46966bc5.png" width=50%/>
 </p>
 
+---
+### Part5 - Results
+
+The **absolute error** reduces
