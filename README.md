@@ -1,6 +1,6 @@
 # Optimization-by-BAS
 ### Introduction
-Using Beetle Antennae Search algorithm (BAS) to solve the groundwater simulation problem.
+Using Beetle Antennae Search algorithm (BAS) to solve the unknow parameter problem from groundwater simulation.
 
 * Numerical groundwater simulation tool : FEFLOW7.3
 
