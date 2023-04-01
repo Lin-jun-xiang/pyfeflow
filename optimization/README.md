@@ -71,7 +71,9 @@ As we can see, the result is not good without well setting.
 And compare to the observation data, the
 
 > **absolute error**: `6.87`
+>
 > **root mean square**: `7.83`
+>
 > **standard deviation**: `8`
 
 <p align="center">
@@ -84,7 +86,9 @@ And compare to the observation data, the
 We set well in the study area uniformly, and then use BAS.
 
 > **absolute error** : `0.988`
+>
 > **root mean square**: `1.3`
+>
 > **standard deviation**: `1.3`
 
 <p align="center">

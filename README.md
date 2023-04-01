@@ -1,4 +1,5 @@
 ## :penguin:FEFLOW-PYTHON
+* [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
 
 - **Required Software**
     - `FEFLOW`: Groundwater flow numerical simulation (Free or paid version)
