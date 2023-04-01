@@ -1,6 +1,12 @@
 import pandas as pd
+import sys
+import ifm
 
-# Need "Node" and "Head"
+# Adding FEFLOW directory to system path
+sys.path.append("C:\\Program Files\\DHI\\2020\\FEFLOW 7.3\\bin64")
+
+# Loading FEFLOW project document
+doc = ifm.loadDocument('Your_FEM_FILE')
 
 # Get the Nodes in fem
 nodes = doc.getNumberOfNodes()
@@ -23,7 +29,5 @@ doc.stopSimulator()
 # Writing the drawdown data to xlsx
 df = pd.DataFrame({"Node" :  [node+1 for node in range(nodes)],
                               "Drawdown" : drawdown})
-print(df.head(5))
 
 df.to_excel("..//Excel//Drawdown.xlsx", index=False)
-
