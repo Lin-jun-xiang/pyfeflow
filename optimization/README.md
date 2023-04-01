@@ -31,6 +31,8 @@ In our research area, there are many private wells for which we cannot obtain de
 * Define the following:
     * **Unknown parameters** (parameters to be optimized): pumping rates of each well
     * **Objective function**: Root Mean Square Error (RMSE) between simulated hydraulic head and observed water level
+    * Beetle step length
+    * Spacing between whiskers
 
 * Algorithm:
 
