@@ -1,83 +1,41 @@
-# Optimization-by-BAS
-### Introduction
-Using Beetle Antennae Search algorithm (BAS) to solve the unknow parameter problem from groundwater simulation.
+## :penguin:FEFLOW-PYTHON
 
-* Numerical groundwater simulation tool : FEFLOW7.3
+- **所需軟體**
+    - `FEFLOW`: 地下水流數值模擬 (免費版或付費版)
+    - `Python`
 
-* Script : Python 3.8.6
-
-In our study area have a lot of private wells that we cannot get the detailed information (ex: well location, well pumping rate). Therefore, we set some virtual wells uniformly in the study area, and all the pumping rate are our system parameters. The system parameters will be adjust by BAS.
-
-The BAS are developed in 2017 (Jiang and Li), and the algorithm as following:
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159463464-716ea7a1-7af6-491e-aebd-db98ea735cd2.png" width=50%/>
-</p>
+* **功能大綱**
+    - [抽水洩降可視化](./drawdown/)
+    - [*蒙地卡羅* 數值模擬](./mc/)
+    - [*馬可夫鏈蒙地卡羅* 數值模擬](./mcmc/)
+    - [*自動優化(校正)* 模擬](./optimization/)
 
 ---
-### Workflow
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/168416976-8bc62e63-a839-44ba-9dec-d194c9b0ad56.png" widht=50%/>
-</p>
+### 介紹
 
----
-### Part1 - Study area
+本專案會透過 `ifm-api-python` 開發地下水流數值模擬的套件。
 
-Roughly explain:
-1. The study area is Pingtung in Taiwan.
-2. The following image is the groundwater table of observation.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159640237-e52cecde-67de-4818-94fc-4c3c03219a4f.png" width=50%/>
-</p>
+> 什麼是 `ifm-api` ?
+> 介面管理 (Interface Manager) 是 `feflow` 中的一種內置函數 (`api`)，通過腳本 (ex: `python`, `c++`) 調用這些函數可以操作整個模擬過程，實現更精細和自動化的數值模擬。
+>舉例來說，如果要進行上萬次模擬，手動透過 `feflow GUI` 反覆操作是不現實的，但是通過腳本操作就可以寫一個程序來實現上萬次模擬，並把每次模擬結果存取下來。
 
 ---
-### Part2 - Groundwater Simulation
 
-Roughly explain:
-1. We use the **FEFLOW7.3** to build our flow model.
-2. Setting the boundary condition. (ex: Dirichlet, Neumann...)
-3. Setting the hydraulic conductivity and inflow of study area.
+### 使用方式
 
----
-### Part3 - Before Optimization
+1. 點選該專案 :star:`Star`，給予開發者支持與動力
 
-As we can see, the result is not good without well setting.
-(gray line : observation ; color line : simulation result)
+2. 確保自己電腦有 `feflow`、`python` 程式
 
-And compare to the observation data, the 
-> **absolute error** is 6.87
+3. 透過功能大綱連結至該功能詳細介紹與開源碼
 
-> **root mean square** is 7.83
+    * 各功能的介紹都會先說明 `feflow` 是否需要 `license`
 
-> **standard deviation** is 8.
+    * 各功能都會有詳細說明檔案 (`README.md`)
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159640520-910c0a10-67a5-45de-b03b-93d0be45e868.png" width=200px/>
-</p>
+4. 進行 `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`
 
----
-### Part4 - After Optimization
+5. 開始使用
 
-We set well in the study area uniformly, and then use BAS.
-
-> **absolute error** is 0.988
-
-> **root mean square** is 1.3
-
-> **standard deviation** is 1.3.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159641259-042c74c8-3028-4253-a7b8-249b46966bc5.png" width=50%/>
-</p>
-
----
-### Part5 - Results
-
-<p align="center">
-<image src="https://user-images.githubusercontent.com/63782903/178942962-eb72864d-f97b-45e6-b571-ab54cf841cc3.png" width=50% />
-
-<p align="center">
-<image src="https://user-images.githubusercontent.com/63782903/178094741-34584c0d-b9a9-44c4-8386-3b2c3005522c.png" width=50%/>
-
+<a href="#top">Back to top</a>
