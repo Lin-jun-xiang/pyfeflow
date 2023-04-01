@@ -1,41 +1,41 @@
 ## :penguin:FEFLOW-PYTHON
 
-- **所需軟體**
-    - `FEFLOW`: 地下水流數值模擬 (免費版或付費版)
+- **Required Software**
+    - `FEFLOW`: Groundwater flow numerical simulation (Free or paid version)
     - `Python`
 
-* **功能大綱**
-    - [抽水洩降可視化](./drawdown/)
-    - [*蒙地卡羅* 數值模擬](./mc/)
-    - [*馬可夫鏈蒙地卡羅* 數值模擬](./mcmc/)
-    - [*自動優化(校正)* 模擬](./optimization/)
+* **Overview of Functions**
+    * [Visualization of Pumping Test Drawdown](./drawdown/)
+    * [Monte Carlo Numerical Simulation](./mc/)
+    * [Markov Chain Monte Carlo Numerical Simulation](./mcmc/)
+    * [Automatic Optimization (Calibration) Simulation](./optimization/)
+---
+
+### Introduction
+
+This project develops a package for groundwater flow numerical simulation using `ifm-api-python`.
+
+>What is `ifm-api`?
+>Interface Manager is a built-in function (API) in `feflow`. By calling these functions through scripts (e.g., `python`, `c++`), the entire simulation process can be operated to achieve more refined and automated numerical simulation.
+>
+>For example, if you want to perform tens of thousands of simulations, it is not practical to repeatedly operate through `feflow GUI`, but by scripting, you can write a program to perform tens of thousands of simulations and save the results of each simulation.
 
 ---
 
-### 介紹
+### Instructions
 
-本專案會透過 `ifm-api-python` 開發地下水流數值模擬的套件。
+1. Click the :star: `Star` button on this project to support and motivate the developer.
 
-> 什麼是 `ifm-api` ?
-> 介面管理 (Interface Manager) 是 `feflow` 中的一種內置函數 (`api`)，通過腳本 (ex: `python`, `c++`) 調用這些函數可以操作整個模擬過程，實現更精細和自動化的數值模擬。
->舉例來說，如果要進行上萬次模擬，手動透過 `feflow GUI` 反覆操作是不現實的，但是通過腳本操作就可以寫一個程序來實現上萬次模擬，並把每次模擬結果存取下來。
+2. Make sure you have `feflow` and `python` installed on your computer.
 
----
+3. Use the link in the function overview to access detailed information and source code for each function.
 
-### 使用方法
+    * Each function introduction will first explain whether `feflow` requires a `license`.
 
-1. 點選該專案 :star:`Star`，給予開發者支持與動力
+    * Each function will have a detailed instruction file (`README.md`).
 
-2. 確保自己電腦有 `feflow`、`python` 程式
+4. Clone the repository using `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`.
 
-3. 透過功能大綱連結至該功能詳細介紹與開源碼
-
-    * 各功能的介紹都會先說明 `feflow` 是否需要 `license`
-
-    * 各功能都會有詳細說明檔案 (`README.md`)
-
-4. 進行 `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`
-
-5. 開始使用
+5. Start using the package.
 
 <a href="#top">Back to top</a>
