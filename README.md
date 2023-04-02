@@ -1,83 +1,42 @@
-# Optimization-by-BAS
+## :penguin:FEFLOW-PYTHON
+* [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
+
+- **Required Software**
+    - `FEFLOW`: Groundwater flow numerical simulation (Free or paid version)
+    - `Python`
+
+* **Overview of Functions**
+    * [Visualization of Pumping Test Drawdown](./drawdown/)
+    * [Monte Carlo Numerical Simulation](./mc/)
+    * [Markov Chain Monte Carlo Numerical Simulation](./mcmc/)
+    * [Automatic Optimization (Calibration) Simulation](./optimization/)
+---
+
 ### Introduction
-Using Beetle Antennae Search algorithm (BAS) to solve the unknow parameter problem from groundwater simulation.
 
-* Numerical groundwater simulation tool : FEFLOW7.3
+This project develops a package for groundwater flow numerical simulation using `ifm-api-python`.
 
-* Script : Python 3.8.6
-
-In our study area have a lot of private wells that we cannot get the detailed information (ex: well location, well pumping rate). Therefore, we set some virtual wells uniformly in the study area, and all the pumping rate are our system parameters. The system parameters will be adjust by BAS.
-
-The BAS are developed in 2017 (Jiang and Li), and the algorithm as following:
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159463464-716ea7a1-7af6-491e-aebd-db98ea735cd2.png" width=50%/>
-</p>
+>What is `ifm-api`?
+>Interface Manager is a built-in function (API) in `feflow`. By calling these functions through scripts (e.g., `python`, `c++`), the entire simulation process can be operated to achieve more refined and automated numerical simulation.
+>
+>For example, if you want to perform tens of thousands of simulations, it is not practical to repeatedly operate through `feflow GUI`, but by scripting, you can write a program to perform tens of thousands of simulations and save the results of each simulation.
 
 ---
-### Workflow
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/168416976-8bc62e63-a839-44ba-9dec-d194c9b0ad56.png" widht=50%/>
-</p>
+### Instructions
 
----
-### Part1 - Study area
+1. Click the :star: `Star` button on this project to support and motivate the developer.
 
-Roughly explain:
-1. The study area is Pingtung in Taiwan.
-2. The following image is the groundwater table of observation.
+2. Make sure you have `feflow` and `python` installed on your computer.
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159640237-e52cecde-67de-4818-94fc-4c3c03219a4f.png" width=50%/>
-</p>
+3. Use the link in the function overview to access detailed information and source code for each function.
 
----
-### Part2 - Groundwater Simulation
+    * Each function introduction will first explain whether `feflow` requires a `license`.
 
-Roughly explain:
-1. We use the **FEFLOW7.3** to build our flow model.
-2. Setting the boundary condition. (ex: Dirichlet, Neumann...)
-3. Setting the hydraulic conductivity and inflow of study area.
+    * Each function will have a detailed instruction file (`README.md`).
 
----
-### Part3 - Before Optimization
+4. Clone the repository using `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`.
 
-As we can see, the result is not good without well setting.
-(gray line : observation ; color line : simulation result)
+5. Start using the package.
 
-And compare to the observation data, the 
-> **absolute error** is 6.87
-
-> **root mean square** is 7.83
-
-> **standard deviation** is 8.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159640520-910c0a10-67a5-45de-b03b-93d0be45e868.png" width=200px/>
-</p>
-
----
-### Part4 - After Optimization
-
-We set well in the study area uniformly, and then use BAS.
-
-> **absolute error** is 0.988
-
-> **root mean square** is 1.3
-
-> **standard deviation** is 1.3.
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/63782903/159641259-042c74c8-3028-4253-a7b8-249b46966bc5.png" width=50%/>
-</p>
-
----
-### Part5 - Results
-
-<p align="center">
-<image src="https://user-images.githubusercontent.com/63782903/178942962-eb72864d-f97b-45e6-b571-ab54cf841cc3.png" width=50% />
-
-<p align="center">
-<image src="https://user-images.githubusercontent.com/63782903/178094741-34584c0d-b9a9-44c4-8386-3b2c3005522c.png" width=50%/>
-
+<a href="#top">Back to top</a>
