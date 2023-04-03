@@ -1,4 +1,4 @@
-# Drawdown Visualization
+# MonteCarlo
 
 ### 簡介
 
@@ -17,25 +17,4 @@
     2. 設置抽水率，並進行模擬
     3. 取出抽水後的水頭值
     4. 利用 (抽水前水頭值) 減去 (抽水後水頭值)
-
-### 範例
-
-1. `ifmDrawdown.py` 計算出 `drawdown.xlsx` 如下:
-    | Node | Drawdown |
-    | ---- | -------- |
-    |1|0.000639|
-    |2|0.001099|
-    |3|0.007327|
-    |...|...|
-
-
-2. 於 `feflow` GUI 中:
-    * `User Data`
-    * 新增 `Add Nodal Distribution`
-    * 新增使用者變數 - `drawdown`
-        ![](../images/2023-04-03-16-41-50.png)
-
-3. 將 `drawdown.xlsx` 導入至 `feflow`，並且與使用者變數 `drawdown` 連結
-
-4. 可視化洩降
 

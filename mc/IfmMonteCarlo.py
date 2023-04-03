@@ -5,8 +5,7 @@ import numpy as np
 import seaborn as sns
 
 sys.path.append("C:\\Program Files\\DHI\\2020\\FEFLOW 7.3\\bin64")
-file = '..\\Fem\\randomField\\test.fem'
-doc = ifm.loadDocument(file)
+doc = ifm.loadDocument('YOUR_FEM_FILE')
 
 # K值 常態分布
 mu, sigma = 1e-3, 1e-4
