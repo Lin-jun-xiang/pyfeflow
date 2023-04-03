@@ -18,3 +18,23 @@
     2. Set the pumping rate and simulate the pumping
     3. Extract the hydraulic head value after pumping
     4. Calculate the drawdown by subtracting the hydraulic head value after pumping from the hydraulic head value before pumping.
+
+### Example
+
+1. `ifmDrawdown.py` calculates `drawdown.xlsx` as follows:
+    | Node | Drawdown |
+    | ---- | -------- |
+    |1|0.000639|
+    |2|0.001099|
+    |3|0.007327|
+    |...|...|
+
+2. In the feflow GUI:
+
+    * User Data
+    * Add Add Nodal Distribution
+    * Add user variable - drawdown
+
+3. Import `drawdown.xlsx` into feflow and link it to the user variable `drawdown`
+
+4. Visualize the drawdown
