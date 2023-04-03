@@ -33,4 +33,5 @@
     * 反覆上述 n 次
 
 5. 將 n 次模擬之流速結果可視化 (`matplotlib`, `seaborn`, `plotly`, ...)
+
     ![](../images/2023-04-03-21-59-51.png)
