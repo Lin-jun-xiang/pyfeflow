@@ -24,7 +24,8 @@
 > 介面管理 (Interface Manager) 是 `feflow` 中的一種內置函數 (api)，通過腳本 (ex: `python`, `c++`) 調用這些函數可以操作整個模擬過程，實現更精細和自動化的數值模擬。
 >
 >舉例來說，如果要進行上萬次模擬，手動透過 `feflow GUI` 反覆操作是不現實的，但是通過腳本操作就可以寫一個程序來實現上萬次模擬，並把每次模擬結果存取下來。
-
+>
+>`ifm` 官方文檔: http://www.feflow.info/html/help73/feflow/13_Programming/IFM/API/api_index.html
 ---
 
 ### 使用方法
