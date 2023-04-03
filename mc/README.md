@@ -33,5 +33,4 @@
     * Repeat the above n times.
 
 5. Visualize the results of the velocity obtained from n simulation runs. (`matplotlib`, `seaborn`, `plotly`, ...)
-
     ![](../images/2023-04-03-21-59-51.png)
