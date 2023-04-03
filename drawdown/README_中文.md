@@ -38,4 +38,6 @@
 3. 將 `drawdown.xlsx` 導入至 `feflow`，並且與使用者變數 `drawdown` 連結
 
 4. 可視化洩降
-
+   <p align=center>
+   <image src="https://user-images.githubusercontent.com/63782903/229460648-27bd0a51-1e2d-4d38-ac1e-21d49c0a4b34.png" width=50%>
+      </p>
