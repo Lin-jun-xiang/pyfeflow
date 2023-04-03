@@ -24,6 +24,8 @@ This project develops a package for groundwater flow numerical simulation using 
 >Interface Manager is a built-in function (API) in `feflow`. By calling these functions through scripts (e.g., `python`, `c++`), the entire simulation process can be operated to achieve more refined and automated numerical simulation.
 >
 >For example, if you want to perform tens of thousands of simulations, it is not practical to repeatedly operate through `feflow GUI`, but by scripting, you can write a program to perform tens of thousands of simulations and save the results of each simulation.
+>
+>`ifm` docs: http://www.feflow.info/html/help73/feflow/13_Programming/IFM/API/api_index.html
 
 ---
 
