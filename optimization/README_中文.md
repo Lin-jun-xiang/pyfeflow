@@ -1,6 +1,7 @@
 # Optimization-by-BAS
 ### 簡介
-* 使用天牛鬚搜索演算法（Beetle Antennae Search algorithm，簡稱BAS）解決地下水模擬中的未知參數問題 (降低模擬誤差)。
+* 使用天牛鬚搜索演算法（Beetle Antennae Search algorithm，簡稱BAS）解決地下水模擬中的未知參數問題 (降低模擬誤差)
+* 使用工具
 
     * 數值地下水模擬工具：FEFLOW 7.3
 
@@ -11,7 +12,11 @@
     * **優化演算法**可以**自動調整參數**，達到擬和目的。
     * 該功能可以透過優化算法找到缺少的資料參數，使模擬值與觀測值擬和。
 
-* `BAS` 是2017年由 Jiang 和 Li 開發的，演算法如下：
+* **優化演算法 (最佳化)** vs `FePEST` 校正:
+   * 優化算法能夠自定義目標函數，使得模擬結果可以更快、更容易擬和
+   * 優化算法不侷限於特定參數，可適用任何未知參數的優化 (e.g. `FePEST` 只能校正 `element` 的屬性，無法校正抽水井參數)
+
+* `BAS` 是2017年由 Jiang 和 Li 開發的，屬於**優化演算法 (最佳化)** 的一種，演算法如下：
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63782903/159463464-716ea7a1-7af6-491e-aebd-db98ea735cd2.png" width=50%/>
