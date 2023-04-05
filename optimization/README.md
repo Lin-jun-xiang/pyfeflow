@@ -3,6 +3,7 @@
 ### Introduction
 * Using Beetle Antennae Search algorithm (`BAS`) to solve the unknow parameter problem from groundwater simulation (Reduce simulation error).
 
+* Tools
     * Numerical groundwater simulation tool : FEFLOW7.3
 
     * Script : Python 3.8.6
@@ -13,7 +14,12 @@
     * **Optimization algorithms** can **automatically adjust parameters** to achieve the fitting goal.
     * This function can use optimization algorithms to find missing data parameters and fit simulated values to observed values.
 
-* `BAS` was developed by Jiang and Li in 2017, and the algorithm is as follows:
+* **Optimization** algorithms vs. `FePEST` calibration:
+
+   * Optimization algorithms can customize the objective function, making it faster and easier to fit the simulation results.
+   * Optimization algorithms are not limited to specific parameters and can be applied to any unknown parameter optimization (e.g. `FePEST` can only calibrate `element` properties and cannot calibrate pumping well parameters).
+
+* `BAS` is a type of optimization algorithm developed by Jiang and Li in 2017. The algorithm is as follows:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63782903/159463464-716ea7a1-7af6-491e-aebd-db98ea735cd2.png" width=50%/>
