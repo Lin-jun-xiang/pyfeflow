@@ -1,4 +1,6 @@
 # IFM & USER_DATA
+* [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
+
 ### Introduction
 
 * This chapter is the easiest part, allowing everyone to experience the usage of `ifm` and understand how to use `user-data`.
