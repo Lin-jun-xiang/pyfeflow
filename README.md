@@ -10,6 +10,7 @@
 </p>
 
 * **Overview of Functions**
+    *  - [x] [Introduction to IFM and USER-DATA](./darcyflux-z/)
     *  - [x] [Visualization of Pumping Test Drawdown](./drawdown/)
     *  - [x] [Monte Carlo Numerical Simulation](./mc/)
     *  - [ ] [Markov Chain Monte Carlo Numerical Simulation](./mcmc/)
