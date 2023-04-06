@@ -4,6 +4,7 @@
 
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
 * Any questions can be asked in the "discussion" section
+* Click the ⭐ Star button on this project to support and motivate the developer.
 
 ---
 
