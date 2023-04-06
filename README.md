@@ -1,4 +1,7 @@
 ## :penguin:FEFLOW-PYTHON
+
+![Repository Views](https://img.shields.io/github/watchers/Lin-jun-xiang/feflow-python-ifm.svg?color=blue&label=Views)
+
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
 * Any questions can be asked in the "discussion" section
 
