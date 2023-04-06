@@ -3,7 +3,7 @@ import sys
 
 sys.path.append("C:\\Program Files\\DHI\\2020\\FEFLOW 7.3\\bin64")
 
-doc = ifm.loadDocument('C:\\JunXiang\\傑明工程\\Fem\\test.fem')
+doc = ifm.loadDocument('YOUR_FEM_FILE')
 
 doc.startSimulator()
 
