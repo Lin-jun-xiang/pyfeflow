@@ -30,16 +30,12 @@
     |3|0.007327|
     |...|...|
 
-
-2. 於 `feflow` GUI 中:
+2. 執行完程式，於 `feflow` GUI 中:
     * `User Data`
-    * 新增 `Add Nodal Distribution`
-    * 新增使用者變數 - `drawdown`
         ![](../images/2023-04-03-16-41-50.png)
 
-3. 將 `drawdown.xlsx` 導入至 `feflow`，並且與使用者變數 `drawdown` 連結
+3. 可視化洩降
 
-4. 可視化洩降
    <p align=center>
    <image src="https://user-images.githubusercontent.com/63782903/229460648-27bd0a51-1e2d-4d38-ac1e-21d49c0a4b34.png" width=50%>
       </p>

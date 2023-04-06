@@ -15,15 +15,16 @@ def create_user_data(user_data_name: str):
         bEnable = 1 # disable = 0, enable = 1
 
         # Create "user data"
-        doc.createNodalRefDistr(user_data_name)
+        if doc.getNodalRefDistrIdByName(user_data_name) == -1:
+            doc.createNodalRefDistr(user_data_name)
 
-        rID_velZ = doc.getNodalRefDistrIdByName(user_data_name)
-        doc.enableNodalRefDistrRecording(rID_velZ, bEnable)
+        user_data = doc.getNodalRefDistrIdByName(user_data_name)
+        doc.enableNodalRefDistrRecording(user_data, bEnable)
 
     except Exception as err:
         print(err)
 
-    return rID_velZ
+    return user_data
 
 def set_user_data():
     for nNode in range(nodes):

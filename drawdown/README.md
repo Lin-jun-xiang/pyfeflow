@@ -29,15 +29,13 @@
     |3|0.007327|
     |...|...|
 
-2. In the feflow GUI:
+2. After executing code, In the feflow GUI:
 
-    * User Data
-    * Add Add Nodal Distribution
-    * Add user variable - drawdown
+    * `User Data`
+        ![](../images/2023-04-03-16-41-50.png)
 
-3. Import `drawdown.xlsx` into feflow and link it to the user variable `drawdown`
 
-4. Visualize the drawdown
+3. Visualize the drawdown
 
    <p align=center>
    <image src="https://user-images.githubusercontent.com/63782903/229460648-27bd0a51-1e2d-4d38-ac1e-21d49c0a4b34.png" width=50%>

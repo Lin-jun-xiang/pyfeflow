@@ -23,8 +23,32 @@ pump_heads = [doc.getResultsFlowHeadValue(node) for node in range(nodes)]
 # Calculate the "drawdown"
 drawdown = [init_head - pump_head for init_head, pump_head in zip(init_heads, pump_heads)]
 
-# Stop simulation with pumping
+def create_user_data(user_data_name: str):
+    try:
+        # Enable reference distribution recording
+        bEnable = 1 # disable = 0, enable = 1
+
+        # Create "user data"
+        if doc.getNodalRefDistrIdByName(user_data_name) == -1:
+            doc.createNodalRefDistr(user_data_name)
+
+        user_data = doc.getNodalRefDistrIdByName(user_data_name)
+        doc.enableNodalRefDistrRecording(user_data, bEnable)
+
+    except Exception as err:
+        print(err)
+
+    return user_data
+
+def set_user_data():
+    for nNode in range(nodes):
+        doc.setNodalRefDistrValue(rID_draw, nNode, pump_heads[nNode])
+
+rID_draw = create_user_data("drawdown")
+set_user_data()
+
 doc.stopSimulator()
+doc.saveDocument()
 
 # Writing the drawdown data to xlsx
 df = pd.DataFrame({"Node" :  [node+1 for node in range(nodes)],
