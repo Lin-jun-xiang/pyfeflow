@@ -10,7 +10,7 @@
 ---
 
 - **Required Software**
-    - `FEFLOW`: Groundwater flow numerical simulation (Free or paid version)
+    - `FEFLOW`: Groundwater flow numerical simulation (Demo or license version)
     - `Python`
 
 <p align=center>
