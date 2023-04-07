@@ -1,6 +1,6 @@
 ## :penguin:FEFLOW-PYTHON
 
-<img src="https://badgen.net/github/watchers//Lin-jun-xiang/feflow-python-ifm?color=blue&label=Views"/>
+<img src="https://badgen.net/github/watchers//Lin-jun-xiang/feflow-python-ifm?color=blue&label="/>
 
 <div>
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/ba412152801f0d8081e492986ab0529e.gif?raw=true" width=20% height=20% />
