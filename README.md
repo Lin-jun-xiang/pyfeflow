@@ -2,9 +2,13 @@
 
 <img src="https://badgen.net/github/watchers//Lin-jun-xiang/feflow-python-ifm?color=blue&label=Views"/>
 
+<div>
+<img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/ba412152801f0d8081e492986ab0529e.gif?raw=true" width=20% height=20% />
+</div>
+
 
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
-* Any questions can be asked in the "discussion" section
+* Any questions can be asked in the "Discussion" section
 * Click the ⭐ Star button on this project to support and motivate the developer.
 
 ---
