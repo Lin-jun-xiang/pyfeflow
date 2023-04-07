@@ -1,7 +1,7 @@
 ## :penguin:FEFLOW-PYTHON
 
 <img src="https://badgen.net/github/watchers//Lin-jun-xiang/feflow-python-ifm?color=blue&label="/>
-
+<img src="https://komarev.com/ghpvc/?username=Lin-jun-xiang&color=blue&label=views" alt=""/>
 <div>
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/ba412152801f0d8081e492986ab0529e.gif?raw=true" width=20% height=20% />
 </div>
