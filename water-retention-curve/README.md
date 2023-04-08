@@ -28,5 +28,5 @@
     | a  | 493. | 14.5 | 0.068 |
     | n  | 2.4476 | 2.68 | 2. |
 
-* 模Simulation result plot:
+* Simulation result plot:
     ![](../images/2023-04-08-20-58-01.png)
