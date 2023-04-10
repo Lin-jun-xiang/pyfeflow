@@ -10,7 +10,7 @@
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
 
 <div>
-    <img src="https://readme-typing-svg.demolab.com/?pause=1&size=25&color=f75c7e&center=True&width=1200&lines=Click+the+⭐+Star+for+this+project+to+support+and+motivate+the+developer.;Any+questions+can+be+asked+in+Discussion." />
+    <img src="https://readme-typing-svg.demolab.com/?pause=1&size=50&color=f75c7e&center=True&width=1200&height=120&lines=Click+the+⭐+Star+please.;Any+questions+can+be+asked+in+Discussion." />
 </div>
 
 
