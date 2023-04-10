@@ -8,8 +8,11 @@
 
 
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
-* Any questions can be asked in the "Discussion" section
-* Click the ⭐ Star button on this project to support and motivate the developer.
+
+<div>
+    <img src="https://readme-typing-svg.demolab.com/?pause=1&size=25&color=f75c7e&center=True&width=1200&lines=Click+the+⭐+Star+for+this+project+to+support+and+motivate+the+developer.;Any+questions+can+be+asked+in+Discussion." />
+</div>
+
 
 ---
 
