@@ -1,6 +1,4 @@
-## :penguin:FEFLOW-PYTHON
-
-[<img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:Lin-jun-xiangtheme=rule34">](https://www.youtube.com/watch?v=PqXPW0oBKgg)
+## :penguin:FEFLOW-PYTHON-IFM
 
 <div>
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/ba412152801f0d8081e492986ab0529e.gif?raw=true" width=20% height=20% />
