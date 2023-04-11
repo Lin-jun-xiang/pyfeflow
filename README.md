@@ -1,15 +1,18 @@
 ## :penguin:FEFLOW-PYTHON
 
+[<img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:Lin-jun-xiangtheme=rule34">](https://www.youtube.com/watch?v=PqXPW0oBKgg)
 
-<img src="https://komarev.com/ghpvc/?username=Lin-jun-xiang&color=blue&label=views" alt=""/>
 <div>
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/ba412152801f0d8081e492986ab0529e.gif?raw=true" width=20% height=20% />
 </div>
 
 
 * [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
-* Any questions can be asked in the "Discussion" section
-* Click the ⭐ Star button on this project to support and motivate the developer.
+
+<div>
+    <img src="https://readme-typing-svg.demolab.com/?pause=1&size=50&color=f75c7e&center=True&width=1200&height=120&vCenter=True&lines=Click+the+⭐+Star+please.;Any+questions+can+be+asked+in+Discussion." />
+</div>
+
 
 ---
 

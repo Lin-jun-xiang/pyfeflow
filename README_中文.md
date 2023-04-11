@@ -4,9 +4,11 @@
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/f8d0e52d6d72c2a4507b0c323304bd86.gif?raw=true" width="20%" height="20%" />
 </div>
 
-任何問題皆可於 "Discussions" 討論
+<div>
+    <img src="https://readme-typing-svg.demolab.com/?pause=1&size=50&color=f75c7e&center=True&width=1200&height=120&vCenter=True&lines=點選+⭐+Star+給予+開發者+支持;任何問題+皆可於+Disccusion+討論!" />
+</div>
 
-點選該專案 ⭐Star，給予開發者支持與動力
+
 
 ---
 
