@@ -26,7 +26,7 @@ def tif_to_xyz(tif_path: str, output: str, step=3) -> None:
     maxX = gt[0] + width*gt[1] + height*gt[2]
     maxY = gt[3]
 
-    print("the domain :", "[", minX, ";", maxX, "]", "[", minY, ";", maxY, "]")
+    print(f"the domain : ({minX}, {maxX}) ({minY}, {maxY})")
 
     elevation = band.ReadAsArray()
 
