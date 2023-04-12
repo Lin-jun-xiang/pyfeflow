@@ -5,8 +5,6 @@
 
 * Convert `.tif` files to `Excel` format.
 
-### 目的
-
 ### Purpose
 
 * Facilitate the creation of numerical models by converting **elevation data** (in `.tif` format) to `.xlsx` format, and importing it into `feflow`.
