@@ -29,7 +29,7 @@
 In our research area, there are many private wells for which we cannot obtain detailed information (such as well location and pumping rates). Therefore, we uniformly set up some virtual wells in the study area, and all pumping rates are system parameters. These system parameters will be adjusted through `BAS` to match the simulated and observed values.
 (Note: unknown parameters can be considered hydraulic conductivity, porosity, saturation, etc.)
 
-* :warning: `Important Note`: This application scenario is referenced from the paper - <a href="https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=UjgkUP/record?r1=1&h1=2" target="_blank">Numerical simulation of groundwater development and evaluation - A case study of Kaoping River</a>
+* :warning: `Important Note`: This application scenario is referenced from the paper - <a href="https://hdl.handle.net/11296/tq3m78" target="_blank">Numerical simulation of groundwater development and evaluation - A case study of Kaoping River</a>
 
 ---
 ### Algorithm Flow
