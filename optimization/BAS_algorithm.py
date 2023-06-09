@@ -1,19 +1,22 @@
-import time
 import math
-import pandas as pd
 import sys
+
 import ifm
 import numpy as np
+import pandas as pd
+
 
 # Adding FEFLOW directory to system path
 sys.path.append("C:\\Program Files\\DHI\\2020\\FEFLOW 7.3\\bin64")
 # Loading FEFLOW project document
 doc = ifm.loadDocument('Your_FEM_FILE')
 
-def normalize(x):
+
+def normalize(x: np.ndarray) -> np.ndarray:
     """Normalizes a given vector"""
     norm = math.sqrt(sum(e**2 for e in x))
     return x / norm
+
 
 def set_obs_heads(data) -> dict:
     """Returns a dictionary of observation head values with node IDs as keys"""
@@ -23,7 +26,8 @@ def set_obs_heads(data) -> dict:
 
     return obs_heads
 
-def set_obs_coordinates(data):
+
+def set_obs_coordinates(data: pd.DataFrame):
     """Returns dictionaries of observation point X and Y coordinates with node IDs as keys"""
     obs_x, obs_y = {}, {}
     for i in data.index:
@@ -32,7 +36,13 @@ def set_obs_coordinates(data):
 
     return obs_x, obs_y
 
-def get_well_effect_region(well_number, obs_x, obs_y, effect_radius=1000) -> list:
+
+def get_well_effect_region(
+    well_number: int,
+    obs_x: dict,
+    obs_y: dict,
+    effect_radius: float=1000
+) -> list:
     """Returns a list of node IDs within the effective radius of a given well"""
     well_node = doc.getMultiLayerWellTopNode(well_number)
     well_x, well_y = obs_x[well_node], obs_y[well_node]
@@ -45,13 +55,20 @@ def get_well_effect_region(well_number, obs_x, obs_y, effect_radius=1000) -> lis
             effected_nodes.append(node)
     return effected_nodes
 
+
 def sign(a):
     """Returns the sign of a given number"""
     if a > 0: return 1
     elif a < 0: return -1
     else: return 0
 
-def optimizing_function(obs_heads, effected_nodes, well_numbers, well_pumps_rate):
+
+def optimizing_function(
+    obs_heads: dict,
+    effected_nodes: list,
+    well_numbers: int,
+    well_pumps_rate: np.ndarray
+) -> float:
     """Calculates the objective function for a given set of well pump rates"""
     for well_number in range(well_numbers):
         doc.setMultiLayerWellAttrValue(well_number, 0, well_pumps_rate[well_number])
@@ -67,6 +84,7 @@ def optimizing_function(obs_heads, effected_nodes, well_numbers, well_pumps_rate
 
     return loss
 
+
 def get_well_info() -> None:
     """Prints the number of multi-layer wells in the project and their respective pump rates"""
     well_n = int(doc.getNumberOfMultiLayerWells())
@@ -74,19 +92,22 @@ def get_well_info() -> None:
     for i in range(well_n):
         print(f"doc.setMultiLayerWellAttrValue({i}, 0, {int(doc.getMultiLayerWellAttrValue(i, 0))})")
 
+
 def run_bas(
-        iter: int=500,
-        step: int=250,
-        d0: int=5000,
-        ):
+    iter: int = 500,
+    step: int = 250,
+    d0: int = 5000,
+) -> None:
     """
 
     Parameters
     ----------
-        iter (int, optional): Number of iteration. Defaults to 500.
-        step (int, optional): Beetle step length. Defaults to 250.
-        d0 (int, optional): Spacing between whiskers. Defaults to 5000.
-
+    iter (int, optional)
+        Number of iteration. Defaults to 500.
+    step (int, optional)
+        Beetle step length. Defaults to 250.
+    d0 (int, optional)
+        Spacing between whiskers. Defaults to 5000.
     """    
     # Get number of multi-layer-wells in the document
     well_numbers = doc.getNumberOfMultiLayerWells()
@@ -122,6 +143,7 @@ def run_bas(
 
         i += 1
         print('epoch=', i+1, 'loss=', fl, fr, 'step=', step)
+
 
 if __name__ == "__main__":
     # Reading observation head data from an Excel file

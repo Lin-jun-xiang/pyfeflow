@@ -1,6 +1,7 @@
-from osgeo import gdal
 import numpy as np
 import pandas as pd
+from osgeo import gdal
+
 
 def tif_to_xyz(tif_path: str, output: str, step=3) -> None:
     """
@@ -44,8 +45,9 @@ def tif_to_xyz(tif_path: str, output: str, step=3) -> None:
     file.to_excel(output, index=False)
     print("Finished!")
 
+
 if __name__ == "__main__":
-    tif_file = 'C:\\JunXiang\\TaoYuan\\catchment.tiff'
+    tif_file = 'YOUR_TIFF_FILE.tiff'
     output = 'test.xlsx'
 
     tif_to_xyz(tif_file, output)

@@ -1,6 +1,8 @@
-import pandas as pd
 import sys
+
 import ifm
+import pandas as pd
+
 
 # Adding FEFLOW directory to system path
 sys.path.append("C:\\Program Files\\DHI\\2020\\FEFLOW 7.3\\bin64")
@@ -23,6 +25,7 @@ pump_heads = [doc.getResultsFlowHeadValue(node) for node in range(nodes)]
 # Calculate the "drawdown"
 drawdown = [init_head - pump_head for init_head, pump_head in zip(init_heads, pump_heads)]
 
+
 def create_user_data(user_data_name: str):
     try:
         # Enable reference distribution recording
@@ -40,6 +43,7 @@ def create_user_data(user_data_name: str):
 
     return user_data
 
+
 def set_user_data():
     for nNode in range(nodes):
         doc.setNodalRefDistrValue(rID_draw, nNode, pump_heads[nNode])
@@ -51,7 +55,9 @@ doc.stopSimulator()
 doc.saveDocument()
 
 # Writing the drawdown data to xlsx
-df = pd.DataFrame({"Node" :  [node+1 for node in range(nodes)],
-                              "Drawdown" : drawdown})
+df = pd.DataFrame({
+    "Node": [node+1 for node in range(nodes)],
+    "Drawdown": drawdown
+})
 
 df.to_excel("..//Excel//Drawdown.xlsx", index=False)

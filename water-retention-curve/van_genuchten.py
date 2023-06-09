@@ -1,18 +1,20 @@
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from typing import List
 
+import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 sns.set()
 
+
 def water_retention_curve(
-        particle_types: List[str],
-        saturation_capacity: List[float],
-        residual_saturation: List[float],
-        air_entry_value: List[float],
-        pore_size_distribution: List[float],
-        pore_shape_factor: List[float],
-        pressure_head: np.ndarray):
+    particle_types: List[str],
+    saturation_capacity: List[float],
+    residual_saturation: List[float],
+    air_entry_value: List[float],
+    pore_size_distribution: List[float],
+    pore_shape_factor: List[float],
+    pressure_head: np.ndarray
+) -> None:
     """calculate water content based on Van Genuchten model
 
     Parameters:
@@ -45,6 +47,7 @@ def water_retention_curve(
     color = ['dodgerblue', 'gold', 'orange', 'r']
     [ax1.plot(water_content[i], pressure_head, c=color[i], label=particle_types[i], linewidth=3) for i in range(len(particle_types))]
     plt.yscale("log")
+    
     ax1.legend(loc='upper right')
     ax1.set(xlim=(0.0, 1),
             xlabel="${\Theta}$ (water content)",
@@ -57,6 +60,7 @@ def water_retention_curve(
     plt.xticks(fontsize=14)
     plt.title("Water retention curve", fontsize=28)
     plt.show()
+
 
 if __name__ == "__main__":
     # define soil particle types and related parameters
@@ -72,10 +76,12 @@ if __name__ == "__main__":
     sand_pressure_head = np.linspace(1e-4, 1e1, 100000) # sand, gravel scale
     pressure_head = np.append(sand_pressure_head, clay_pressure_head)
 
-    water_retention_curve(particle_types,
-                          saturation_capacity,
-                          residual_saturation,
-                          air_entry_value,
-                          pore_size_distribution,
-                          pore_shape_factor,
-                          pressure_head)
+    water_retention_curve(
+        particle_types,
+        saturation_capacity,
+        residual_saturation,
+        air_entry_value,
+        pore_size_distribution,
+        pore_shape_factor,
+        pressure_head
+    )
