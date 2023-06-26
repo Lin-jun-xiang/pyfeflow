@@ -4,6 +4,8 @@
 <img src="https://github.com/Lin-jun-xiang/Lin-jun-xiang/blob/main/gif/f8d0e52d6d72c2a4507b0c323304bd86.gif?raw=true" width="20%" height="20%" />
 </div>
 
+[English](./README.md) | [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
+
 <div>
     <img src="https://readme-typing-svg.demolab.com/?pause=1&size=50&color=f75c7e&center=True&width=1200&height=120&vCenter=True&lines=點選+⭐+Star+給予+開發者+支持;任何問題+皆可於+Issue+討論!" />
 </div>
@@ -26,7 +28,7 @@
     - - [x] [*蒙地卡羅* 數值模擬](./mc/)
     - - [ ] [*馬可夫鏈蒙地卡羅* 數值模擬](./mcmc/)
     - - [x] [使用*快取優化*蒙地卡羅模擬](./mc-cache/)
-    - - [x] [*自動優化(校正)* 模擬](./optimization/)
+    - - [x] [*優化* 演算 (校正模擬)](./optimization/)
     - - [ ] [數值分層套件]()
     - - [x] [未飽和曲線可視化](./water-retention-curve/)
     - - [x] [Tiff to Excel](./tif-to-excel/)
@@ -43,6 +45,9 @@
 >舉例來說，如果要進行上萬次模擬，手動透過 `feflow GUI` 反覆操作是不現實的，但是通過腳本操作就可以寫一個程序來實現上萬次模擬，並把每次模擬結果存取下來。
 >
 >`ifm` [官方文檔](http://www.feflow.info/html/help73/feflow/13_Programming/IFM/API/api_index.html)
+
+
+
 ---
 
 ### 使用方法

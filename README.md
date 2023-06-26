@@ -5,7 +5,7 @@
 </div>
 
 
-* [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
+[English](./README.md) | [中文版說明書](./README_%E4%B8%AD%E6%96%87.md)
 
 <div>
     <img src="https://readme-typing-svg.demolab.com/?pause=1&size=50&color=f75c7e&center=True&width=1200&height=120&vCenter=True&lines=Click+the+⭐+Star+please.;Any+questions+can+be+asked+in+Issue." />
@@ -28,7 +28,7 @@
     *  - [x] [Monte Carlo Numerical Simulation](./mc/)
     *  - [ ] [Markov Chain Monte Carlo Numerical Simulation](./mcmc/)
     *  - [x] [Use *Cache-Optimized* Monte Carlo Simulation](./mc-cache/)
-    *  - [x] [Automatic Optimization (Calibration) Simulation](./optimization/)
+    *  - [x] [Optimization Algorithim (Calibration)](./optimization/)
     *  - [ ] [Discritization Package]()
     *  - [x] [Unsaturation Curve](./water-retention-curve/)
     *  - [x] [Tiff to Excel](./tif-to-excel/)
