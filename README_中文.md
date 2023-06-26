@@ -42,7 +42,7 @@
 >
 >舉例來說，如果要進行上萬次模擬，手動透過 `feflow GUI` 反覆操作是不現實的，但是通過腳本操作就可以寫一個程序來實現上萬次模擬，並把每次模擬結果存取下來。
 >
->`ifm` 官方文檔: http://www.feflow.info/html/help73/feflow/13_Programming/IFM/API/api_index.html
+>`ifm` [官方文檔](http://www.feflow.info/html/help73/feflow/13_Programming/IFM/API/api_index.html)
 ---
 
 ### 使用方法
