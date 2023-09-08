@@ -3,6 +3,7 @@ from typing import List
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
 sns.set()
 
 
@@ -12,8 +13,6 @@ def water_retention_curve(
     residual_saturation: List[float],
     air_entry_value: List[float],
     pore_size_distribution: List[float],
-    pore_shape_factor: List[float],
-    pressure_head: np.ndarray
 ) -> None:
     """calculate water content based on Van Genuchten model
 
@@ -27,8 +26,10 @@ def water_retention_curve(
         A list of the soil residual saturation, which is the water content retained in the soil at very low pressures.
     air_entry_value : List[float]
         A list of the soil air entry value, which is the lowest pressure at which air can enter the soil and water starts to drain.
+        (higher a : the low suction threshold of air entry(start to drain))
     pore_size_distribution : List[float]
         A list of the soil pore size distribution, which is the variability of the pore sizes in the soil.
+        (1.0~5.0; higher n: free drain; n=1: not drain)
     pore_shape_factor : List[float]
         A list of the soil pore shape factor, which is the shape of the pores in the soil.
     pressure_head : np.ndarray
@@ -38,8 +39,35 @@ def water_retention_curve(
     --------
     None
 
-    """
+    Examples:
+    ---------
+    ```python
+    from pyfeflow import water_retention_curve
 
+    # define soil particle types and related parameters
+    particle_types = ["Gravel", "Sand", "Clay"]
+    saturation_capacity = [1., 1., 1.]
+    residual_saturation = [0.0311, 0.045, 0.068]
+    air_entry_value = [493., 14.5, 0.8]
+    pore_size_distribution = [2.4476, 2.68, 2.]
+
+    water_retention_curve(
+        particle_types,
+        saturation_capacity,
+        residual_saturation,
+        air_entry_value,
+        pore_size_distribution
+    )
+    ```
+    """
+    pore_shape_factor = [1-1/i for i in pore_size_distribution]
+
+    # define pressure head range for plotting
+    clay_pressure_head = np.linspace(1e1, 1e5, 10000) # clay scale
+    sand_pressure_head = np.linspace(1e-4, 1e1, 100000) # sand, gravel scale
+    pressure_head = np.append(sand_pressure_head, clay_pressure_head)
+
+    # create water content
     water_content = [[residual_saturation[i] + ((saturation_capacity[i]-residual_saturation[i])/(1.0+(air_entry_value[i]*h)**pore_size_distribution[i])**pore_shape_factor[i]) for h in pressure_head] for i in range(len(particle_types))]
     
     fig = plt.figure(figsize=(7, 7))
@@ -60,28 +88,3 @@ def water_retention_curve(
     plt.xticks(fontsize=14)
     plt.title("Water retention curve", fontsize=28)
     plt.show()
-
-
-if __name__ == "__main__":
-    # define soil particle types and related parameters
-    particle_types = ["Gravel", "Sand", "Clay"]
-    saturation_capacity = [1., 1., 1.]
-    residual_saturation = [0.0311, 0.045, 0.068]
-    air_entry_value = [493., 14.5, 0.0008] # higher a : the low suction threshold of air entry(start to drain)
-    pore_size_distribution = [2.4476, 2.68, 2.] # 1.0~5.0; higher n: free drain; n=1: not drain
-    pore_shape_factor = [1-1/i for i in pore_size_distribution]
-
-    # define pressure head range for plotting
-    clay_pressure_head = np.linspace(1e1, 1e5, 10000) # clay scale
-    sand_pressure_head = np.linspace(1e-4, 1e1, 100000) # sand, gravel scale
-    pressure_head = np.append(sand_pressure_head, clay_pressure_head)
-
-    water_retention_curve(
-        particle_types,
-        saturation_capacity,
-        residual_saturation,
-        air_entry_value,
-        pore_size_distribution,
-        pore_shape_factor,
-        pressure_head
-    )

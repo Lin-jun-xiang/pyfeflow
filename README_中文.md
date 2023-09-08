@@ -23,21 +23,21 @@
 </p>
 
 * **功能大綱**
-    - - [x] [初步認識 IFM 與 USER-DATA](./darcyflux-z/)
-    - - [x] [抽水洩降可視化](./drawdown/)
-    - - [x] [*蒙地卡羅* 數值模擬](./mc/)
-    - - [ ] [*馬可夫鏈蒙地卡羅* 數值模擬](./mcmc/)
-    - - [x] [使用*快取優化*蒙地卡羅模擬](./mc-cache/)
-    - - [x] [*優化* 演算 (校正模擬)](./optimization/)
+    - - [x] [初步認識 IFM 與 USER-DATA](./docs/01_darcyflux_%E4%B8%AD%E6%96%87.md)
+    - - [x] [抽水洩降可視化](./docs//02_drawdown_%E4%B8%AD%E6%96%87.md)
+    - - [x] [*蒙地卡羅* 數值模擬](./docs/03_IfmMonteCarlo_%E4%B8%AD%E6%96%87.md)
+    - - [ ] [*馬可夫鏈蒙地卡羅* 數值模擬]()
+    - - [x] [使用*快取優化*蒙地卡羅模擬](./docs/04_monteCarlo_cache_%E4%B8%AD%E6%96%87.md)
+    - - [x] [*優化* 演算 (校正模擬)](./docs/07_BAS_algorithm_%E4%B8%AD%E6%96%87.md)
     - - [ ] [數值分層套件]()
-    - - [x] [未飽和曲線可視化](./water-retention-curve/)
-    - - [x] [Tiff to Excel](./tif-to-excel/)
+    - - [x] [未飽和曲線可視化](./docs/05_van_genuchten_%E4%B8%AD%E6%96%87.md)
+    - - [x] [Tiff to Excel](./docs/06_tif2excel_%E4%B8%AD%E6%96%87.md)
 
 ---
 
 ### 介紹
 
-本專案會透過 `ifm-api-python` 開發地下水流數值模擬的套件。
+本專案會透過 `ifm-api-python` 開發地下水流數值模擬的套件，各功能的介紹與原理皆可於[`docs`](./docs/)文件內查看，或者點選"功能大綱"中的連結。
 
 > 什麼是 `ifm-api` ?
 > 介面管理 (Interface Manager) 是 `feflow` 中的一種內置函數 (api)，通過腳本 (ex: `python`, `c++`) 調用這些函數可以操作整個模擬過程，實現更精細和自動化的數值模擬。
@@ -62,8 +62,12 @@
 
     * 各功能都會有詳細說明檔案 (`README.md`)
 
-4. 進行 `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`
+4. `pip install gdal`
 
-5. 開始使用
+5. `pip install pyfeflow`
+
+6. 開始使用
 
 <a href="#top">Back to top</a>
+
+---

@@ -23,21 +23,21 @@
 </p>
 
 * **Overview of Functions**
-    *  - [x] [Introduction to IFM and USER-DATA](./darcyflux-z/)
-    *  - [x] [Visualization of Pumping Test Drawdown](./drawdown/)
-    *  - [x] [Monte Carlo Numerical Simulation](./mc/)
-    *  - [ ] [Markov Chain Monte Carlo Numerical Simulation](./mcmc/)
-    *  - [x] [Use *Cache-Optimized* Monte Carlo Simulation](./mc-cache/)
-    *  - [x] [Optimization Algorithim (Calibration)](./optimization/)
+    *  - [x] [Introduction to IFM and USER-DATA](./docs/01_darcyflux.md)
+    *  - [x] [Visualization of Pumping Test Drawdown](./docs/02_drawdown.md)
+    *  - [x] [Monte Carlo Numerical Simulation](./docs/03_IfmMonteCarlo.md)
+    *  - [ ] [Markov Chain Monte Carlo Numerical Simulation]()
+    *  - [x] [Use *Cache-Optimized* Monte Carlo Simulation](./docs/04_monteCarlo_cache.md)
+    *  - [x] [Optimization Algorithim (Calibration)](./docs/07_BAS_algorithm.md)
     *  - [ ] [Discritization Package]()
-    *  - [x] [Unsaturation Curve](./water-retention-curve/)
-    *  - [x] [Tiff to Excel](./tif-to-excel/)
+    *  - [x] [Unsaturation Curve](./docs/05_van_genuchten.md)
+    *  - [x] [Tiff to Excel](./docs/06_tif2excel.md)
 
 ---
 
 ### Introduction
 
-This project develops a package for groundwater flow numerical simulation using `ifm-api-python`.
+This project develops a package for groundwater flow numerical simulation using `ifm-api-python`. You can find descriptions and explanations of each function in the [`docs`](./docs/) folder or by clicking the links in the "Overview" section.
 
 >What is `ifm-api`?
 >Interface Manager is a built-in function (API) in `feflow`. By calling these functions through scripts (e.g., `python`, `c++`), the entire simulation process can be operated to achieve more refined and automated numerical simulation.

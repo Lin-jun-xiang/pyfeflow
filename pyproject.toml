@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pyfeflow"
+version = "0.1.0"
+description = "Open Source Package for the FEFLOW-Python"
+authors = ["Lin-jun-xiang <jimmy871117@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Lin-jun-xiang/pyfeflow"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "3.6.2"
+pandas = "1.5.3"
+pydantic = "1.10.12"
+scipy = { version = "^1.11.2", python = ">=3.9,<3.13" }
+seaborn = "^0.12.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
