@@ -62,6 +62,10 @@ This project develops a package for groundwater flow numerical simulation using 
 
 4. Clone the repository using `git clone https://github.com/Lin-jun-xiang/feflow-python-ifm.git`.
 
-5. Start using the package.
+4. `pip install gdal`
+
+5. `pip install pyfeflow`
+
+6. Start using the package.
 
 <a href="#top">Back to top</a>
