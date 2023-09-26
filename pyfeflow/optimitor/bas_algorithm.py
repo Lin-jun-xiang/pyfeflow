@@ -43,7 +43,7 @@ class Ifm:
     def get_simulation_result(node_id: int):
         if CALIBRATION_PARA == 'Head':
             return doc.getResultsFlowHeadValue(node_id)
-                                                      
+
     @staticmethod
     def get_well_effect_region(
         well_id: int,

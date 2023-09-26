@@ -31,10 +31,7 @@ class Drawdown:
     def __init__(self, doc) -> None:
         self.doc = doc
         self.nodes = doc.getNumberOfNodes()
-
-    @property
-    def initial_heads(self) -> list:
-        return [self.doc.getResultsFlowHeadValue(node) for node in range(self.nodes)]
+        self.initial_heads = [self.doc.getResultsFlowHeadValue(node) for node in range(self.nodes)]
 
     @property
     def drawdown(self) -> list:
